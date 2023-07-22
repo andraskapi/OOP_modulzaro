@@ -66,7 +66,10 @@ public class Person {
     public String friendsToString() {
         String names = "";
         for (Person actual : friends) {
-            names += actual.getName() + ", ";
+            if (!names.isEmpty()){
+                names += ", ";
+            }
+            names += actual.getName() ;
         }
         return names;
     }
