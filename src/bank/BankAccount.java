@@ -11,13 +11,17 @@ public class BankAccount {
         this.accountNumber = accountNumber;
     }
 
-    public static boolean isValidAccountNumber(String accountNumber){
+    public static boolean isValidAccountNumber(String accountNumber) throws InvalidAccountNumberException {
 
+        int sum = 0;
+        int firstDigit = accountNumber.charAt(0);
+        int lastDigit = accountNumber.charAt(accountNumber.length() - 1);
 
         for (int i = 0; i < accountNumber.length(); i++) {
-
-
-        }
+            sum += Integer.parseInt(accountNumber.charAt(i) + "");
+        }if (firstDigit % 2 == lastDigit % 2 && sum >= 20){
+            return true;
+        }throw new InvalidAccountNumberException("Nem megfelelő számlaszám");
     }
 
     public void transfer(double amount, BankAccount other) throws NoMoneyException, NullAmountException {

@@ -1,9 +1,18 @@
 package bank;
 
 public class Main {
-    public static void main(String[] args) throws NoMoneyException, NullAmountException {
-        BankAccount janiAcc = new BankAccount("Kis János",7500,"1447886-6654788");
-        BankAccount belaAcc = new BankAccount("Kovács Béla",500,"1447886-7841473");
+    public static void main(String[] args) throws NoMoneyException, NullAmountException, InvalidAccountNumberException {
+        BankAccount janiAcc = new BankAccount("Kis János",7500,"2447888");
+        BankAccount belaAcc = new BankAccount("Kovács Béla",500,"1254000");
+
+        System.out.println(BankAccount.isValidAccountNumber(janiAcc.getAccountNumber()));
+        try {
+            System.out.println(BankAccount.isValidAccountNumber(belaAcc.getAccountNumber()));
+        }catch (InvalidAccountNumberException exception){
+            System.out.println(exception.getMessage());
+        }
+
+
 
         System.out.println(janiAcc.getBalance());
         System.out.println(janiAcc.getAccountName());
