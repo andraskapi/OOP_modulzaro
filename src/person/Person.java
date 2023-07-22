@@ -63,13 +63,19 @@ public class Person {
         this.age = age;
     }
 
+    public void listFriend() {
+        for (Person actual : friends)
+            System.out.println(actual.getName());
+
+    }
+
     public String friendsToString() {
         String names = "";
         for (Person actual : friends) {
-            if (!names.isEmpty()){
+            if (!names.isEmpty()) {
                 names += ", ";
             }
-            names += actual.getName() ;
+            names += actual.getName();
         }
         return names;
     }

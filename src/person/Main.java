@@ -27,6 +27,8 @@ public class Main {
         viktor.addFriend(kati);
         System.out.println(viktor);
         System.out.println(kati);
+        viktor.listFriend();
+
 
     }
 }
