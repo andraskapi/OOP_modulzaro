@@ -50,16 +50,21 @@ Pontozás: 12 + 1 pont
 
 zoo package
 
-Készíts egy állatkertet, amelyben különböző típusú állatok élnek. Az állatok lehetnek emlősök (mammal), madarak (bird) vagy hüllők (reptile).
-Az emlősök között legyenek legalább kutya (dog) és macska (cat), a madarak között legalább sas (eagle) és pingvin (penguin), a hüllők között pedig kígyó (snake) és teknős (turtle) osztályok! 2 pont
-Minden állatnak van egy neve és egy életkora 0,5 pont. Az állatok képesek kiadni hangot, de különböző hangokat adnak ki a típusuktól függően.1 pont
+Készíts egy állatkertet, amelyben különböző típusú állatok élnek. Az állatok lehetnek emlősök (mammal), 
+madarak (bird) vagy hüllők (reptile).
+Az emlősök között legyenek legalább kutya (dog) és macska (cat), a madarak között legalább sas (eagle) és 
+pingvin (penguin), a hüllők között pedig kígyó (snake) és teknős (turtle) osztályok! 2 pont
+Minden állatnak van egy neve és egy életkora 0,5 pont. Az állatok képesek kiadni hangot, 
+de különböző hangokat adnak ki a típusuktól függően.1 pont
 Írj marker interface-eket:
 elevenszülő (viviparous)
 tojással szaporodik (oviparous)
 tud repülni (flyable) 0,5 pont
 és használd őket a megfelelő helyeken! 1 pont
 
-Az állatkert csak egy listát tartalmazzon az állatok tárolására! Lehessen új állatot felvenni, egy meglévő állatot “kidobni”, 1 pont illetve kilistázni őket különböző módonokon: (erre használhatsz több metódust is) összes állat, 0,5 pont emlősök, madarak, hüllők 2,5 pont.
+Az állatkert csak egy listát tartalmazzon az állatok tárolására! Lehessen új állatot felvenni, egy meglévő állatot
+“kidobni”, 1 pont illetve kilistázni őket különböző módonokon: (erre használhatsz több metódust is) összes állat, 
+0,5 pont emlősök, madarak, hüllők 2,5 pont.
 Plusz pont: OOP koncepciók precíz követése 1 pont
 
 
