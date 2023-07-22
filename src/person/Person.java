@@ -20,17 +20,18 @@ public class Person {
         populationCount++;
     }
 
-    public void addFriend(Person friend){
+    public void addFriend(Person friend) {
         friends.add(friend);
 
         friend.friends.add(this);
 
     }
-    public void addHobbie(String hobbie){
+
+    public void addHobbie(String hobbie) {
         hobbies.add(hobbie);
     }
 
-    public static int population(){
+    public static int population() {
         return populationCount;
     }
 
@@ -62,9 +63,9 @@ public class Person {
         this.age = age;
     }
 
-    public String friendsToString(){
+    public String friendsToString() {
         String names = "";
-        for (Person actual : friends){
+        for (Person actual : friends) {
             names += actual.getName() + ", ";
         }
         return names;
