@@ -1,15 +1,21 @@
 package shape;
 
 public class Circle extends Shape{
+    private double radius;
 
-    private int radius;
+    public Circle(double radius) {
+        this.radius = radius;
+    }
+
     @Override
     public double perimeter() {
-        return 0;
+        return 2 * radius * Math.PI;
     }
 
     @Override
     public double area() {
-        return 0;
+        return radius * radius * Math.PI;
     }
+
+
 }

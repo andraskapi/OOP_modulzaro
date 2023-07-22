@@ -1,13 +1,22 @@
 package shape;
 
 public class Square extends Shape{
+
+    private double side;
+
+    public Square(double side) {
+        this.side = side;
+    }
+
     @Override
     public double perimeter() {
-        return 0;
+        return 4 * side;
     }
 
     @Override
     public double area() {
-        return 0;
+        return side * side;
     }
+
+
 }
